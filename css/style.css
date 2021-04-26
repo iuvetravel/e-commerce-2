@@ -534,11 +534,7 @@ h4 {
   padding: 0;
 }
 .single-product {
-  margin: 50px 20px;
-}
-
-.single-product .col-2 {
-  padding: 20px;
+  margin: 40px 20px;
 }
 
 .single-product .col-2 h4 {
@@ -572,7 +568,7 @@ h4 {
 }
 
 .single-product .btn-home {
-  margin: 25px 10px;
+  margin: 25px 50px;
 }
 
 .yellow {
@@ -580,6 +576,7 @@ h4 {
 }
 
 .single-product input {
+  margin: 0 20px 0;
   width: 60px;
   height: 40px;
   font-size: 1em;
@@ -1228,7 +1225,7 @@ form a {
   }
 
   .single-product .btn-home {
-    width: 200px;
+    width: 180px;
     text-align: center;
     font-weight: 500;
     font-size: 1.5em;
