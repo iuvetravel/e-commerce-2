@@ -1187,9 +1187,9 @@ form a {
   }
 
   .single-product .col-2 img {
-    margin-top: 50px;
+    margin-top: 10px;
     width: 100%;
-    padding: 0 10px;
+    padding: 0 5px;
   }
   .single-product {
     border: none;
@@ -1199,10 +1199,6 @@ form a {
     font-size: 2em;
     text-align: center;
     padding-bottom: 0;
-  }
-
-  .single-product .col-2 {
-    padding: 0 10px;
   }
 
   .single-product .col-2 h4 {
