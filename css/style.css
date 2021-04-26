@@ -76,10 +76,24 @@ p {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.row-discount {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: whitesmoke;
+}
+.row-footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
 .col-2 {
   flex-basis: 50%;
   min-width: 250px;
+  text-align: left;
 }
 
 .col-2 img {
@@ -100,15 +114,16 @@ p {
 .col-2 h1 {
   font-size: 5em;
   line-height: 1em;
-  margin: 35px 100px;
   color: #004380;
   text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: center;
 }
 
 .col-2 p {
   color: #004380;
   padding: 0 10px;
   font-size: 1em;
+  text-align: center;
 }
 
 .btn-cart {
@@ -305,7 +320,7 @@ h4 {
 
 .offers img {
   margin-left: 100px;
-  width: 550px;
+  width: 600px;
 }
 
 .offers .great {
@@ -496,11 +511,12 @@ h4 {
 }
 
 .btn-down {
+  font-size: 1.5em;
   font-weight: 300;
   display: inline-block;
   background: #004380;
   color: #fff;
-  padding: 8px 10px;
+  padding: 8px 30px;
   margin: 30px 20px;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -558,14 +574,6 @@ h4 {
 
 .single-product .btn-home {
   margin: 25px 10px;
-}
-
-.col-2 p {
-  font-size: 1.5em;
-  color: #004380;
-  margin: 0;
-  padding: 0;
-  text-align: left;
 }
 
 .yellow {
@@ -695,27 +703,36 @@ th:last-child {
 /* ------------ Account Page --------------- */
 .account-page {
   padding: 50px 0;
-  background: url(../img/down1.webp) left;
-  padding: 80px 0;
-  background-repeat: no-repeat;
+}
+.col-account {
+  width: 100%;
+  height: 600px;
+}
+
+.col-account img {
+  width: 325px;
+  left: 300px;
 }
 
 .form-container {
+  background: #fff;
   width: 300px;
   height: 400px;
   position: relative;
+  bottom: 50px;
+  top: -460px;
   text-align: center;
   padding: 20px 0;
   margin: auto;
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
   overflow: hidden;
-  z-index: 3;
 }
 
 .form-container span {
-  font-weight: 700;
-  padding: 0 10px;
-  color: #054749;
+  font-weight: bold;
+  padding: 20px 10px;
+  color: #004380;
   cursor: pointer;
   width: 100px;
   display: inline-block;
@@ -723,9 +740,6 @@ th:last-child {
 
 .form-btn {
   display: inline-block;
-  margin: 0;
-  padding: 20px 0;
-  font-size: 1em;
 }
 
 .form-container form {
@@ -741,19 +755,20 @@ form input {
   height: 30px;
   margin: 10px 0;
   padding: 0 10px;
-  border: 1px solid #054749;
+  border: 1px solid #004380;
 }
 
-form .btn2 {
-  width: 100%;
-  font-size: 1.5em;
-  color: #fff;
-  background-color: #004380;
+form .btn {
+  width: 90%;
   border: none;
-  cursor: pointer;
   margin: 10px 0;
+  cursor: pointer;
   padding: 10px 0;
-  border-radius: 80px;
+  border-radius: 50px;
+  background: #004380;
+  color: #fff;
+  font-size: 1.3em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 form .btn:focus {
@@ -762,34 +777,34 @@ form .btn:focus {
 
 #LoginForm {
   left: -300px;
+  transition: 1s;
 }
 
 #RegForm {
   left: 0;
-}
-
-form a {
-  font-size: 0.8em;
-}
-
-#indicator {
-  width: 100px;
-  border: none;
-  background-color: #cd2a09;
-  height: 5px;
-  margin-top: 7px;
-  transform: translateX(100px);
   transition: 1s;
 }
 
-.text {
-  display: flex;
-  flex: 50%;
-  padding: 10px 20px;
+form a {
+  font-size: 1em;
+}
+#Indicator {
+  width: 100px;
+  border: none;
+  background: #004380;
+  height: 5px;
+  margin-right: 5px;
+  margin-top: -10px;
+  transform: translateX(200px);
+  transition: 1s;
 }
 
-.text img {
-  padding: 0 20px;
+.row-discount h5 {
+  margin: 10px 10px;
+  padding: 10 px 10px;
+  font-size: 1.8em;
+  font-weight: 100;
+  color: #004380;
 }
 
 /* ------------ End Account Page --------------- */
@@ -929,6 +944,14 @@ form a {
     padding: 0;
     margin: 0;
   }
+
+  .row-discount h5 {
+    margin: 10px 10px;
+    padding: 10 px 10px;
+    font-size: 1.2em;
+    font-weight: 100;
+    color: #004380;
+  }
   .col-5 {
     flex-basis: 10%;
     padding: 0;
@@ -987,19 +1010,18 @@ form a {
     margin: 0;
     margin: 5px;
   }
-  .btn {
-    padding: 0;
-    display: none;
-  }
+
   .col-2 h1 {
     font-size: 2.5em;
     margin: 5px auto;
     color: #004380;
+    text-align: left;
   }
   .col-2 p {
     color: #004380;
     padding: 0 10px;
     font-size: 1em;
+    text-align: left;
   }
   .navbar {
     width: 100%;
@@ -1019,30 +1041,21 @@ form a {
     top: -30px;
     margin: 0 40px;
   }
-  .col-2 h1 {
-    color: #004380;
-  }
-  .col-2 p {
-    color: #004380;
-    text-align: center;
-  }
 
   .small-container {
     margin-top: 80px;
   }
 
-  .small {
-    color: #004380;
-    text-align: left;
-    font-size: 1.5em;
-  }
-
   .btn-down {
     display: block;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-align: center;
     margin-left: 120px;
     width: 160px;
+  }
+
+  .btn-home {
+    font-size: 1.3em;
   }
   hr {
     width: 60%;
@@ -1096,6 +1109,7 @@ form a {
   }
   .footer p {
     margin-left: 10px;
+    text-align: center;
   }
 
   .title h2 {
@@ -1137,8 +1151,8 @@ form a {
   .col-4 h4 {
     color: #004380;
     text-align: center;
-    font-size: 3em;
-    font-weight: bold;
+    font-size: 1.5em;
+    font-weight: 300;
   }
   .small-container h1 {
     text-align: left;
@@ -1253,6 +1267,20 @@ form a {
     padding: 0;
     margin: 0;
   }
+
+  .row-discount h5 {
+    margin: 10px 10px;
+    padding: 10 px 10px;
+    font-size: 1em;
+    font-weight: 300;
+    color: #004380;
+  }
+
+  .offers img {
+    margin-left: 100px;
+    width: 300px;
+  }
+
   .col-2 p {
     margin: 0;
     color: #004380;
@@ -1304,6 +1332,42 @@ form a {
   }
   .details-product p {
     text-align: left;
+  }
+  .form-container {
+    top: -1px;
+  }
+  .col-account img {
+    display: none;
+  }
+  .footer h3 {
+    text-align: center;
+  }
+  .account-page {
+    height: 740px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+  }
+  #Indicator {
+    width: 100px;
+    border: none;
+    background: #004380;
+    height: 5px;
+    margin-right: 5px;
+    margin-top: -10px;
+    transform: translateX(200px);
+    transition: 1s;
+  }
+  .fa-heart,
+  .fa-eye {
+    font-size: 1.5em;
+    padding: 0 20px;
+    color: #004380;
+  }
+  .row-discount h5 {
+    margin: 10px 10px;
+    padding: 10 px 10px;
+    font-size: 1em;
+    color: #004380;
   }
 }
 
